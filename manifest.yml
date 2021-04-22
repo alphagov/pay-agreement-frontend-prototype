@@ -1,0 +1,10 @@
+---
+applications:
+- name: pay-agreement-frontend-prototype
+  command: node start.js 
+  memory: 256M
+  buildpacks:
+  - nodejs_buildpack
+  env:
+    USERNAME: payteam 
+    PASSWORD: payteam 
