@@ -1,0 +1,35 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Confirm agreement
+      </h1>
+
+      <dl class="confirm-details govuk-body">
+        <dt class="confirm-details__term govuk-body govuk-!-font-weight-bold">Initial payment amount</dt>
+        <dd class="confirm-details__value govuk-body">£30</dd>
+        <dt class="confirm-details__term govuk-body govuk-!-font-weight-bold">Recurring payment amount</dt>
+        <dd class="confirm-details__value govuk-body">£20</dd>
+        <dt class="confirm-details__term govuk-body govuk-!-font-weight-bold">Frequency of payment</dt>
+        <dd class="confirm-details__value govuk-body">13th of every month</dd>
+        <dt class="confirm-details__term govuk-body govuk-!-font-weight-bold">Total number of payments</dt>
+        <dd class="confirm-details__value govuk-body">20</dd>
+      </dl>
+
+      <div class="govuk-button-group">
+        <a href="choose-payment-type" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Confirm
+        </a>
+
+        <a class="govuk-link" href="#">Cancel</a>
+      </p>
+    </div>
+  </div>
+{% endblock %}

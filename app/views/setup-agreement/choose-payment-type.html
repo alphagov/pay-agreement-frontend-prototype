@@ -1,0 +1,43 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              How do you want to pay?
+            </h1>
+          </legend>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="recurring-card-payment" name="recurring-card-payment" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="recurring-card-payment">
+                Recurring card payment
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="direct-debit" name="direct-debit" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="direct-debit">
+                Direct debit
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div> 
+
+      <p class="govuk-body">
+        <button class="govuk-button" data-module="govuk-button">
+          Confirm
+        </button>
+      </p>
+    </div>
+  </div>
+{% endblock %}

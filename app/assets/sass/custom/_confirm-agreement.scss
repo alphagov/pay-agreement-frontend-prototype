@@ -1,0 +1,13 @@
+
+.confirm-details {
+
+  &__term {
+    
+    @include govuk-responsive-margin(0, "bottom");
+  }
+
+  &__value {
+    margin-inline-start: 0;
+  }
+}
+
